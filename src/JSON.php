@@ -86,6 +86,10 @@ class JSON extends Field
         $attribute = $attribute ?? $this->attribute;
 
         $value = $resource->{$attribute};
+        
+        if ($value instanceof \App\Objects\JsonObject) {
+            $value = $value->toArray();
+        }
 
         $this->value = is_object($value) || is_array($value) ? $value : json_decode($value);
 
@@ -200,6 +204,10 @@ class JSON extends Field
         $attribute = $attribute ?? $this->attribute;
 
         $value = $resource->{$attribute};
+        
+        if ($value instanceof \App\Objects\JsonObject) {
+            $value = $value->toArray();
+        }
 
         $this->value = is_object($value) || is_array($value) ? $value : json_decode($value);
 
