@@ -36,14 +36,14 @@
           @input="forceInputEvent"
         />
         <span
-          class="flex items-center justify-center bg-danger text-white p-2 m-2 w-6 h-6 rounded-full cursor-pointer font-bold"
+          class="flex items-center justify-center bg-danger text-white p-2 m-2 w-6 h-6 text-grey text-xl cursor-pointer font-bold"
           @click="rowToRemove = row.row_id"
         >x</span>
       </div>
       <div class="flex justify-end">
         <a
           :class="{ 'pointer-events-none opacity-50': shouldDisableButton }"
-          class="btn btn-primary p-3 rounded cursor-pointer mt-3"
+          class="btn-sm btn-primary p-2 text-sm rounded cursor-pointer mt-3"
           @click="addRow"
         >{{ addRowText }}</a>
       </div>
