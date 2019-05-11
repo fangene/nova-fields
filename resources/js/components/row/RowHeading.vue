@@ -1,5 +1,5 @@
 <template>
-  <div class="flex border-40 border">
+  <div class="flex border-40 border bg-grey-lighter">
     <div
       v-for="(field, index) in fields"
       :key="index"
