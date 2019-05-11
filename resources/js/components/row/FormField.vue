@@ -36,7 +36,7 @@
           @input="forceInputEvent"
         />
         <span
-          class="flex items-center justify-center bg-danger text-white p-2 m-2 w-6 h-6 text-grey text-xl cursor-pointer font-bold"
+          class="flex items-center justify-center text-white p-2 m-2 w-6 h-6 text-grey text-xl cursor-pointer font-bold"
           @click="rowToRemove = row.row_id"
         >x</span>
       </div>
